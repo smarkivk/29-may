@@ -1,0 +1,24 @@
+public class MyClass {
+    private int number;
+    private String text;
+    
+    public MyClass(int number, String text) {
+        this.number = number;
+        this.text = text;
+    }
+    
+    public void display() {
+        System.out.println("Number: " + number);
+        System.out.println("Text: " + text);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of MyClass
+        MyClass myObject = new MyClass(10, "Hello");
+        
+        // Call methods on the instance
+        myObject.display();
+    }
+}
